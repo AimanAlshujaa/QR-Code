@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669.3679166666667 437.3" width="669.3679166666667" height="437.3" style="--bg:#1F1F1F;--fg:#CCCCCC;--line:#CCCCCC;--accent:#0078D4;--muted:#CCCCCCCC;--surface:#181818;--border:#CCCCCC;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="App" data-to="API" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="1. إرسال الموقع الجغرافي والحالة" points="145.0785,88.9 145.07849999999996,181.2 297.62666666666667,181.2 297.62666666666667,193.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="API" data-to="DB" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2. حفظ الموقع المؤقت + تحديث الحالة" points="333.8639166666666,230.10000000000002 333.8639166666666,346.40000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="API" data-to="Dashboard" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="3. بث الإحداثيات مباشرة عبر WebSockets" points="370.10116666666664,193.2 370.10116666666664,181.2 523.7579166666667,181.2 523.7579166666667,136.9 465.07208333333335,136.9 465.07208333333335,88.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Dashboard" data-to="API" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="4. إسناد بلاغ لدورية محددة" points="392.54975,88.9 392.54975,112.9 333.8639166666666,112.9 333.8639166666666,193.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="App" data-to="API" data-label="1. إرسال الموقع الجغرافي والحالة">
+  <rect x="53.07849999999996" y="143.9" width="183.97000000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="145.06349999999998" y="159.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">1. إرسال الموقع الجغرافي والحالة</text>
+</g>
+<g class="edge-label" data-from="API" data-to="DB" data-label="2. حفظ الموقع المؤقت + تحديث الحالة">
+  <rect x="234.86391666666663" y="273.1" width="197.03800000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="333.38291666666663" y="288.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2. حفظ الموقع المؤقت + تحديث الحالة</text>
+</g>
+<g class="edge-label" data-from="API" data-to="Dashboard" data-label="3. بث الإحداثيات مباشرة عبر WebSockets">
+  <rect x="413.75791666666674" y="143.9" width="219.61" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="523.5629166666668" y="159.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">3. بث الإحداثيات مباشرة عبر WebSockets</text>
+</g>
+<g class="edge-label" data-from="Dashboard" data-to="API" data-label="4. إسناد بلاغ لدورية محددة">
+  <rect x="257.8639166666666" y="119.9" width="151.89400000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="333.8109166666666" y="135.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">4. إسناد بلاغ لدورية محددة</text>
+</g>
+<g class="node" data-id="App" data-label="تطبيق الموبايل - رجل الأمن" data-shape="rectangle">
+  <rect x="40" y="52" width="210.15699999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="145.0785" y="70.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">تطبيق الموبايل - رجل الأمن</text>
+</g>
+<g class="node" data-id="API" data-label="FastAPI Backend" data-shape="rectangle">
+  <rect x="261.38941666666665" y="193.2" width="144.949" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="333.8639166666667" y="211.64999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">FastAPI Backend</text>
+</g>
+<g class="node" data-id="DB" data-label="PostgreSQL" data-shape="cylinder">
+  <rect x="275.83891666666665" y="353.40000000000003" width="116.04999999999998" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="275.83891666666665" y1="353.40000000000003" x2="275.83891666666665" y2="390.30000000000007" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="391.88891666666666" y1="353.40000000000003" x2="391.88891666666666" y2="390.30000000000007" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="333.8639166666666" cy="390.30000000000007" rx="58.02499999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="333.8639166666666" cy="353.40000000000003" rx="58.02499999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="333.8639166666666" y="371.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">PostgreSQL</text>
+</g>
+<g class="node" data-id="Dashboard" data-label="لوحة التحكم - غرفة العمليات" data-shape="rectangle">
+  <rect x="320.0274166666667" y="52" width="217.56699999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="428.8109166666667" y="70.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">لوحة التحكم - غرفة العمليات</text>
+</g>
+</svg>

@@ -38,7 +38,7 @@ import {
 type Lang = "ar" | "en"
 
 /* ── UPDATE THIS URL BEFORE DEPLOYMENT ── */
-const PAGE_URL = "https://sanad-project.vercel.app"
+const PAGE_URL = "https://qr-code-zeta-mocha.vercel.app"
 
 const content = {
   ar: {
@@ -169,7 +169,7 @@ const content = {
       "Mazen Sultan Abduljalil Abdulnoor",
       "Muneer Ali Naji Salman",
     ],
-    supervisor: "المشرف: أ. رائد السلوي",
+    supervisor: "المشرف: أ. رعد الصلوي",
     supervisorEn: "Supervisor: Raad Al-Slwai",
     resourcesTitle: "الموارد والمواد",
     resources: {
