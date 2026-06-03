@@ -169,7 +169,7 @@ const content = {
       "Mazen Sultan Abduljalil Abdulnoor",
       "Muneer Ali Naji Salman",
     ],
-    supervisor: "المشرف: أ. رعد الصلوي",
+    supervisor: "المشرف: د. رعد الصلوي",
     supervisorEn: "Supervisor: Raad Al-Slwai",
     resourcesTitle: "الموارد والمواد",
     resources: {
@@ -900,7 +900,7 @@ export default function ProjectQrPage() {
               <p className="text-sm font-bold text-white/60">{t.confBadge} | Taiz University | 2025 – 2026</p>
               <p className="text-xs font-bold text-white/40">
                 {isArabic
-                  ? "المؤتمر العلمي الدولي الرابع للبحوث والابتكار"
+                  ? "المؤتمر الطلابي  الرابع للبحث والابتكار - 4SRIC"
                   : "4th Scientific Research and Innovation Conference"}
               </p>
             </div>
